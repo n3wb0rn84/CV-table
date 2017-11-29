@@ -7,7 +7,7 @@ body{
   width: 100%;
   height: 100%;
   background: #b7b7b7;
-  font-family: helvetica;
+  font-family: arial, helvetica, sans-serif;
 }
 
 table{
@@ -16,7 +16,8 @@ table{
 
 h2{
   font-size: 22px;
-  color: #1959FF;
+  color: #3d91cd;
+  text-transform: uppercase;
 }
 
 h3{
@@ -27,21 +28,116 @@ a{
   text-decoration: none;
   color: black;
 }
+footer{
+  width: 100%;
+  height: 3rem;
+}
+i {
+
+	color: #3d91cd;
+	padding: 0.25rem;
+}
+
+progress{
+  padding-left: 1rem;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  height: auto;
+
+}
+progress::-moz-progress-bar {
+  background-color: #3d91cd;
+  box-shadow:
+    inset 0 2px 9px  rgba(255,255,255,0.3),
+    inset 0 -2px 6px rgba(0,0,0,0.4);
+
+}
+
+.skill caption, .langues caption, .qualités caption{
+  width:50%;
+  text-align: left;
+}
+
+h2{
+  text-align: left;
+}
+
+article{
+  position: relative;
+}
+
+.work section, .play section {
+  width: 5rem;
+  height: 5rem;
+  transform: rotateZ(-45deg);
+  background-color: #3d91cd;
+  text-align: center;
+  color: #f1f1f1;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+.work{
+  width: 6rem;
+  height: 1rem;
+  font-size: 10px;
+  position: absolute;
+  bottom:0;
+  left:0;
+  float: right;
+}
+
+.play{
+  width: 6rem;
+  height: 1rem;
+  font-size: 10px;
+  position: absolute;
+  bottom:2rem;
+  left:16rem;
+}
+
+.work tr{
+  width:10%;
+}
+
+.work h2, .work p, .play h2, .play p{
+  font-size:12px;
+}
+
 
 .resume{
 	margin: 0 auto;
-	width: 95%;
+	width: 900px;
 	height: 95%;
 	background-color: #f1f1f1;
   position: relative;
+  margin-top: 2rem;
 }
+
+.spaceskill{
+  width: 100%;
+  height: 1rem;
+}
+
+.play section p{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  font-size: 24px;
+}
+
+.work section p{
+  font-size: 24px;
+}
+
 
 #resumesq{
   margin-left: 4rem;
   top:0;
   width: 6rem;
   height: 5rem;
-  background-color: #1959FF;
+  background-color: #3d91cd;
   color: white;
   text-align: center;
 }
@@ -56,12 +152,13 @@ a{
   height: auto;
   margin-left: 5%;
   margin-right: 5%;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
 }
 
 #données-perso th{
+  width: 55%;
   font-size: 60px;
-  color: #1959FF;
+  color: #3d91cd;
   text-align: left;
 }
 
@@ -75,25 +172,22 @@ a{
 
 #données-perso td{
 	text-align: justify;
-}
-
-i {
-
-	color: #1959FF;
-	padding: 0.25rem;
+  padding-left: 2rem;
 }
 
 #etudes{
   width: 50%;
   height: 100%;
-  margin-left: 10%;
+  margin-left: 2rem;
   margin-bottom: 10rem;
 }
+
 #etudes th{
   width: 33%;
   height: auto;
   text-align: left;
 }
+
 #expérience th{
   width: 33%;
   height: auto;
@@ -103,63 +197,103 @@ i {
 #expérience{
   width: 50%;
   height: 100%;
-  margin-left: 10%;
+  margin-left: 2rem;
+  padding-top: 5rem;
   margin-bottom: 10rem;
 }
 
-footer{
-  width: 100%;
-  height: 3rem;
+#qualités{
+  top:60%;
+  right: 0;
+  margin-right:2rem;
+  position: absolute;
+  border-bottom: 1px solid #3d91cd;
 }
+
+
 #bordure-bas{
   width: 100%;
   height: 3rem;
-  background-color: #1959FF;
+  background-color: #3d91cd;
 }
 #skill{
   top:20%;
   right: 0;
   margin-right:2rem;
   position: absolute;
-  width: 30%;
-}
+  border-bottom: 1px solid #3d91cd;
 
-caption{
-  margin-left: -15rem;
-  text-align: center;
 }
 
 #skill th{
   padding:1rem;
   margin-left: 5rem;
-  width: 33%;
 }
 
-
+#skill tr:nth-child(1){
+  width: 50%;
+}
+#langues tr:nth-child(1){
+  width: 50%;
+}
+#qualités tr:nth-child(1){
+  width: 50%;
+}
 
 #langues{
-  top:50%;
+  top:46%;
   right: 0;
   margin-right:2rem;
   position: absolute;
-  width: 30%;
+  border-bottom: 1px solid #3d91cd;
 }
 
 #langues th{
   padding:1rem;
   margin-left: 5rem;
-  width: 33%;
+  color: transparent;
 }
 
-.spaceskill{
-  width: 100%;
-  height: 1rem;
+#qualités th{
+  padding:1rem;
+  margin-left: 5rem;
+  color: transparent;
+  overflow: hidden;
 }
 
-progress{
-  padding-left: 1rem;
-  background-color: transparent;
-  border: none;
-  width: 100%;
-  height: auto;
+#left {
+
+  position: absolute;
+  left:0;
+  bottom:3rem;
+}
+
+.work article section {
+  position: absolute;
+  left:7rem;
+  bottom: 5.5rem;
+}
+
+.play article section {
+  position: absolute;
+  right: 7rem;
+  bottom: 3rem;
+}
+
+#right {
+  position:  absolute;
+  left: 0;
+  bottom: 3rem;
+}
+
+#placement{
+  position: absolute;
+  bottom:0;
+  right:22.5rem;
+
+}
+
+#skill, #langues, #qualités{
+  border-collapse: separate;
+  border-spacing: 0 0.2rem;
 }
